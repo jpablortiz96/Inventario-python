@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Productos Grupo A | Subgrupo 2</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/estilos.css')}}"/>
+  </head>
+  <body>
+
+    <div class="login-box">
+      <img src="{{url_for('static', filename='images/logo.png')}}" class="avatar" alt="Avatar Image">
+      <h1>Recuperar Contraseña</h1>
+      <br>
+      <form>
+        <label for="username">Email</label>
+        <input type="text" placeholder="Ingresa tu correo electronico">
+        <input type="submit" value="Aceptar">
+        <a>Se enviará las intrucciones para restablecer tu contraseña a tu correo electronico. Recuerda revisar el spam si no lo encuentras en tu bandeja principal</a>
+        <br><br>
+        <a href="{{url_for('login')}}">Volver</a>
+      </form>
+    </div>
+  </body>
+</html>
